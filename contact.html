@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoFresh - Contact</title>
+    <link rel="stylesheet" href="Components/Project-1.css">
+</head>
+<body>
+    <header>
+        <h1>Agr-IoT</h1>
+        <nav>
+            <ul>
+                <li><a href="acceuil.html">Accueil</a></li>
+                <li><a href="services.html">Services</a></li>
+                <li><a href="Actualités">Actualités</a></li>
+                <li class="dropdown">
+                    <a href="equipe.html">Équipe</a>
+                    <div class="dropdown-content">
+                        <a href="valeurs.html">Valeurs</a>
+                        <a href="histoire.html">Histoire</a>
+                        <a href="témoignages.html">Témoignages</a>
+                    </div>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <section>
+            <h2>Contactez-nous</h2>
+            <form action="https://hnitest.go.yj.fr" method="POST">
+                <label for="lastname">Nom:</label>
+                <input class="yourclass" id="lastname" type="text" name="lastname" required><br>
+                <label for="firstname">Prénom:</label>
+                <input class="yourclass" id="firstname" type="text" name="firstname" required><br>
+                <label for="email">Email:</label>
+                <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required><br>
+                <label for="request">Demande:</label>
+                <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea><br>
+                <label for="country">Pays:</label>
+                <select class="yourclass" name="country" id="country">
+                    <option value="france">France</option>
+                    <option value="belgium">Belgique</option>
+                    <option value="switzerland">Suisse</option>
+                    <option value="canada">Canada</option>
+                    <option value="other">Autre</option>
+                </select><br>
+                <input type="submit" value="Envoyer">
+            </form>
+        </section>
+    </main>
+    <footer>
+        <p>&copy; 2024 Agr-IoT. Tous droits réservés.</p>
+    </footer>
+</body>
+</html>
