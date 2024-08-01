@@ -1,84 +1,143 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Actualités - Agr-IoT</title>
-    <link rel="stylesheet" href="Components/Project-1.css">
+    <title>Agr-IoT - Accueil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <header>
+    <header class="bg-success text-white text-center py-3">
         <h1>Agr-IoT</h1>
-        <nav>
-            <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="actualités.html">Actualités</a></li>
-                <li class="dropdown">
-                    <a href="equipe.html">Équipe</a>
-                    <div class="dropdown-content">
-                        <a href="valeurs.html">Valeurs</a>
-                        <a href="histoire.html">Histoire</a>
-                        <a href="témoignages.html">Témoignages</a>
-                    </div>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-5"><a class="nav-link" href="acceuil.html">Accueil</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="actualités.html">Actualités</a></li>
+                    <li class="nav-item dropdown mr-5">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Équipe
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown" >
+                            <a class="dropdown-item " href="valeurs.html">Valeurs</a>
+                            <a class="dropdown-item " href="histoire.html">Histoire</a>
+                            <a class="dropdown-item " href="témoignages.html">Témoignages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+
+
+
+    <main class="container mt-4">
         <section class="news">
-            <h2>Articles Récents</h2>
-            <article>
-                <h3>Le Futur de l'Agriculture Intelligente</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-                <a href="#">Lire la suite</a>
-            </article>
-            <article>
-                <h3>Comment les Capteurs IoT Transforment l'Agriculture</h3>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-                <a href="#">Lire la suite</a>
-            </article>
+            <h2 class="text-center">Articles Récents</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Le Futur de l'Agriculture Intelligente</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+                            <a href="#" class="btn btn-primary">Lire la suite</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Comment les Capteurs IoT Transforment l'Agriculture</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+                            <a href="#" class="btn btn-primary">Lire la suite</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
         
-        <section class="videos">
-            <h2>Vidéos</h2>
-            <div class="video">
-                <h3>Introduction à l'Agriculture Intelligente</h3>
-                <a href="https://www.youtube.com/watch?v=gfCEQgx4d-4" target="_blank">
-                    <img src="Components/Images/News.png"  alt="Introduction à l'Agriculture Intelligente">
-                </a>
+        <section class="videos my-5">
+            <h2 class="text-center">Vidéos</h2>
+            <div class="row">
+                <div class="col-md-12">
+                    <div class="card">
+                        <div class="card-body text-center">
+                            <h3 class="card-title">Introduction à l'Agriculture Intelligente</h3>
+                            <a href="https://www.youtube.com/watch?v=gfCEQgx4d-4" target="_blank">
+                                <img src="Components/Images/News.png" class="img-fluid" alt="Introduction à l'Agriculture Intelligente">
+                            </a>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="gallery">
-            <h2>Galerie d'images</h2>
-            <div class="gallery-item">
-                <h2>Bague intelligente samsung</h2>
-                <img src="Components/Images/SamsungRing.jpg" alt="Bague de Samsung" >
-            </div>
-            <div class="gallery-item">
-                <h2>Tracteur connectés</h2>
-                <img src="Components/Images/Tracteurs-connectés.jpg" alt="Tracteurs connectés">
-                
+        <section class="gallery my-5">
+            <h2 class="text-center">Galerie d'images</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="Components/Images/SamsungRing.jpg" class="card-img-top" alt="Bague de Samsung">
+                        <div class="card-body">
+                            <h5 class="card-title">Bague intelligente Samsung</h5>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <img src="Components/Images/Tracteurs-connectés.jpg" class="card-img-top" alt="Tracteurs connectés">
+                        <div class="card-body">
+                            <h5 class="card-title">Tracteurs connectés</h5>
+                        </div>
+                    </div>
+                </div>
             </div>
         </section>
 
-        <section class="updates">
-            <h2>Mises à Jour et Annonces</h2>
-            <article>
-                <h2>Nouvelle Technologie IoT Lancée</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-                <a href="#">En savoir plus</a>
-            </article>
-            <article>
-                <h2>Partenariat avec des Agriculteurs Locaux</h2>
-                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
-                <a href="#">En savoir plus</a>
-            </article>
+        <section class="updates my-5">
+            <h2 class="text-center">Mises à Jour et Annonces</h2>
+            <div class="row">
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Nouvelle Technologie IoT Lancée</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-md-6 mb-4">
+                    <div class="card">
+                        <div class="card-body">
+                            <h3 class="card-title">Partenariat avec des Agriculteurs Locaux</h3>
+                            <p class="card-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Vivamus lacinia odio vitae vestibulum vestibulum. Cras venenatis euismod malesuada.</p>
+                            <a href="#" class="btn btn-primary">En savoir plus</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
         </section>
     </main>
-    <footer>
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Agr-IoT. Tous droits réservés.</p>
     </footer>
+    
 </body>
 </html>

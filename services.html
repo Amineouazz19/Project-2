@@ -4,82 +4,106 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Agr-IoT - Services</title>
-    <link rel="stylesheet" href="Components/Project-1.css">
+    <title>Agr-IoT - Accueil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
 
 <body>
-    <header>
+    
+    <header class="bg-success text-white text-center py-3">
         <h1>Agr-IoT</h1>
-        <nav>
-            <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="actualités.html">Actualités</a></li>
-                <li class="dropdown">
-                    <a href="equipe.html">Équipe</a>
-                    <div class="dropdown-content">
-                        <a href="valeurs.html">Valeurs</a>
-                        <a href="histoire.html">Histoire</a>
-                        <a href="témoignages.html">Témoignages</a>
-                    </div>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-5"><a class="nav-link" href="acceuil.html">Accueil</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="actualités.html">Actualités</a></li>
+                    <li class="nav-item dropdown mr-5">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Équipe
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown">
+                            <a class="dropdown-item" href="valeurs.html">Valeurs</a>
+                            <a class="dropdown-item" href="histoire.html">Histoire</a>
+                            <a class="dropdown-item" href="témoignages.html">Témoignages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+   
+    <main class="container my-4">
         <section class="services">
-            <h2>Nos Services</h2>
+            <h2 class="my-4 text-center">Nos Services</h2>
             <p>Agr-IoT offre une gamme de services pour aider les agriculteurs à tirer parti des technologies IoT et à
                 améliorer leur productivité. Voici quelques-uns des principaux services que nous proposons :</p>
 
-            <div class="service-item">
-                <br><br><br><article>
+            <div class="row mb-4">
+                <div class="col-md-6">
                     <h3>1. Gestion de l'irrigation</h3>
                     <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed do eiusmod tempor incididunt ut
                         labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco
                         laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in
                         voluptate velit esse cillum dolore eu fugiat nulla pariatur.</p>
-                </article>
-                <figure>
-                    
-                    <img src="Components/Images/gestion-irrigation.jpg" alt="Gestion de l'irrigation">
-                    <figcaption>Image de gestion de l'irrigation par <a
-                            href="https://prakor.com/en/benefits-of-remote-drip-irrigation-management/">[Prakor]</a>.
-                    </figcaption>
-                </figure>
-
+                </div>
+                <div class="col-md-6">
+                    <figure class="figure">
+                        <img src="Components/Images/gestion-irrigation.jpg" class="img-fluid rounded" alt="Gestion de l'irrigation">
+                        <figcaption class="figure-caption text-center">Image de gestion de l'irrigation par <a href="https://prakor.com/en/benefits-of-remote-drip-irrigation-management/">[Prakor]</a>.</figcaption>
+                    </figure>
+                </div>
             </div>
 
-            <div class="service-item">
-                <article>
+            <div class="row mb-4">
+                <div class="col-md-6">
                     <h3>2. Analyse de données agricoles</h3>
                     <p>Nous offrons des services d'analyse de données pour aider les agriculteurs à comprendre les
                         tendances et les modèles dans leurs données de culture. Cela inclut des rapports détaillés et
                         des recommandations pour améliorer la productivité et la durabilité.</p>
-                </article>
-                <figure>
-                    <br><img src="Components/Images/analyse-donnees.jpg" alt="Analyse de données agricoles">
-                </figure>
+                </div>
+                <div class="col-md-6">
+                    <figure class="figure">
+                        <img src="Components/Images/analyse-donnees.jpg" class="img-fluid rounded" alt="Analyse de données agricoles">
+                        <figcaption class="figure-caption text-center">Analyse de données agricoles</figcaption>
+                    </figure>
+                </div>
             </div>
 
-            <div class="service-item">
-                <article>
+            <div class="row mb-4">
+                <div class="col-md-6">
                     <h3>3. Automatisation des fermes</h3>
                     <p>Nos solutions d'automatisation permettent de contrôler divers aspects de la ferme, y compris
                         l'éclairage, la température et l'irrigation, via une application mobile ou une plateforme web.
                         Cela facilite la gestion des fermes et améliore l'efficacité.</p>
-                </article>
-                <figure>
-                    <img src="Components/Images/automatisation-fermes.jpg" alt="Automatisation des fermes">
-                </figure>
-                
-
+                </div>
+                <div class="col-md-6">
+                    <figure class="figure">
+                        <img src="Components/Images/automatisation-fermes.jpg" class="img-fluid rounded" alt="Automatisation des fermes">
+                        <figcaption class="figure-caption text-center">Automatisation des fermes</figcaption>
+                    </figure>
+                </div>
             </div>
         </section>
     </main>
-    <footer>
-        <p>&copy; 2024 Agr-IoT. Tous droits réservés.</p>
+
+    <footer class="bg-dark text-white text-center py-2">
+            <p>&copy; 2024 Agr-IoT. Tous droits réservés.</p>
+        </div>
     </footer>
 </body>
 

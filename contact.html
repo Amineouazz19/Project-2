@@ -1,55 +1,88 @@
 <!DOCTYPE html>
 <html lang="fr">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoFresh - Contact</title>
-    <link rel="stylesheet" href="Components/Project-1.css">
+    <title>Agr-IoT - Accueil</title>
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.5.4/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 </head>
+
 <body>
-    <header>
+    <header class="bg-success text-white text-center py-3">
         <h1>Agr-IoT</h1>
-        <nav>
-            <ul>
-                <li><a href="acceuil.html">Accueil</a></li>
-                <li><a href="services.html">Services</a></li>
-                <li><a href="Actualités">Actualités</a></li>
-                <li class="dropdown">
-                    <a href="equipe.html">Équipe</a>
-                    <div class="dropdown-content">
-                        <a href="valeurs.html">Valeurs</a>
-                        <a href="histoire.html">Histoire</a>
-                        <a href="témoignages.html">Témoignages</a>
-                    </div>
-                <li><a href="contact.html">Contact</a></li>
-            </ul>
-        </nav>
     </header>
-    <main>
+
+    <nav class="navbar navbar-expand-lg navbar-light bg-light">
+        <div class="container">
+            <a class="navbar-brand"></a>
+            <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarNav"
+                aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-center" id="navbarNav">
+                <ul class="navbar-nav">
+                    <li class="nav-item mr-5"><a class="nav-link" href="acceuil.html">Accueil</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="services.html">Services</a></li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="actualités.html">Actualités</a></li>
+                    <li class="nav-item dropdown mr-5">
+                        <a class="nav-link dropdown-toggle" id="navbarDropdown" role="button" data-toggle="dropdown"
+                            aria-haspopup="true" aria-expanded="false">
+                            Équipe
+                        </a>
+                        <div class="dropdown-menu bg-light" aria-labelledby="navbarDropdown" >
+                            <a class="dropdown-item " href="valeurs.html">Valeurs</a>
+                            <a class="dropdown-item " href="histoire.html">Histoire</a>
+                            <a class="dropdown-item " href="témoignages.html">Témoignages</a>
+                        </div>
+                    </li>
+                    <li class="nav-item mr-5"><a class="nav-link" href="contact.html">Contact</a></li>
+                </ul>
+            </div>
+        </div>
+    </nav>
+
+    <main class="container my-4">
         <section>
-            <h2>Contactez-nous</h2>
+            <h2 class="my-4">Contactez-nous</h2>
             <form action="https://hnitest.go.yj.fr" method="POST">
-                <label for="lastname">Nom:</label>
-                <input class="yourclass" id="lastname" type="text" name="lastname" required><br>
-                <label for="firstname">Prénom:</label>
-                <input class="yourclass" id="firstname" type="text" name="firstname" required><br>
-                <label for="email">Email:</label>
-                <input class="yourclass" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com" required><br>
-                <label for="request">Demande:</label>
-                <textarea class="yourclass" name="request" id="request" cols="66" rows="10" required></textarea><br>
-                <label for="country">Pays:</label>
-                <select class="yourclass" name="country" id="country">
-                    <option value="france">France</option>
-                    <option value="belgium">Belgique</option>
-                    <option value="switzerland">Suisse</option>
-                    <option value="canada">Canada</option>
-                    <option value="other">Autre</option>
-                </select><br>
-                <input type="submit" value="Envoyer">
+                <div class="form-group">
+                    <label for="lastname">Nom:</label>
+                    <input class="form-control" id="lastname" type="text" name="lastname" required>
+                </div>
+                <div class="form-group">
+                    <label for="firstname">Prénom:</label>
+                    <input class="form-control" id="firstname" type="text" name="firstname" required>
+                </div>
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input class="form-control" id="mail" type="email" name="email" placeholder="yourmail@yahoo.com"
+                        required>
+                </div>
+                <div class="form-group">
+                    <label for="request">Demande:</label>
+                    <textarea class="form-control" name="request" id="request" rows="5" required></textarea>
+                </div>
+                <div class="form-group">
+                    <label for="country">Pays:</label>
+                    <select class="form-control" name="country" id="country">
+                        <option value="france">France</option>
+                        <option value="belgium">Belgique</option>
+                        <option value="switzerland">Suisse</option>
+                        <option value="canada">Canada</option>
+                        <option value="other">Autre</option>
+                    </select>
+                </div>
+                <button type="submit" class="btn btn-primary">Envoyer</button>
             </form>
         </section>
     </main>
-    <footer>
+
+    
+    <footer class="bg-dark text-white text-center py-3">
         <p>&copy; 2024 Agr-IoT. Tous droits réservés.</p>
     </footer>
 </body>
